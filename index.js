@@ -9,7 +9,8 @@ const port = process.env.PORT || 8000;
 app.use(express.json());
 app.use(cors());
 
-const uri = `${process.env.DB_HOST}://${process.env.DB_USER}:${process.env.DB_PASS}@cluster1.ffeps.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
+
+const uri =`${process.env.DB_HOST}://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.a8pyd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 
 const client = new MongoClient(uri, {
   useNewUrlParser: true,
